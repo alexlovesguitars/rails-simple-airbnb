@@ -131,6 +131,8 @@ GEM
       net-imap
       net-pop
       net-smtp
+    mapbox-gl-rails (3.7.0)
+      railties (>= 3.2)
     marcel (1.0.4)
     matrix (0.4.2)
     mini_mime (1.1.5)
@@ -246,6 +248,9 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
+    simple_form (5.3.1)
+      actionpack (>= 5.2)
+      activemodel (>= 5.2)
     sprockets (4.2.1)
       concurrent-ruby (~> 1.0)
       rack (>= 2.2.4, < 4)
@@ -303,11 +308,13 @@ DEPENDENCIES
   debug
   importmap-rails
   jbuilder
+  mapbox-gl-rails
   puma (>= 5.0)
   rails (~> 7.1.5, >= 7.1.5.1)
   rails-controller-testing
   rspec-rails
   selenium-webdriver
+  simple_form
   sprockets-rails
   sqlite3 (>= 1.4)
   stimulus-rails

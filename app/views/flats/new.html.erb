@@ -1,0 +1,20 @@
+<div>
+  <div class="d-flex justify-content-between" id="top-banner">
+    <h4 class="mt-2 px-2">Simple AirBnB</h4>
+    <%= link_to "Add Flat", new_flat_path, class: "btn btn-outline-primary mt-2 mb-2 mx-2" %>
+  </div>
+  <div class="container mt-5 px-5" style="background-color: whitesmoke; width: 800px">
+    <h1 class="py-4"> Add a new flat</h1>
+    <%= simple_form_for @flat do |f| %>
+      <%= f.input :name %>
+      <%= f.input :address %>
+      <%= f.input :description %>
+      <%= f.input :number_of_guests %>
+      <%= f.input :price_per_night %>
+      <div class="d-flex">
+      <%= f.button :submit, class: "btn btn-primary mx-2" %>
+      <%= link_to "Cancel", flats_path(@flats), class: "btn btn-danger mx-2" %>
+      </div>
+    <% end %>
+  </div>
+</div>
